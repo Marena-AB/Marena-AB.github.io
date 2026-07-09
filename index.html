@@ -83,7 +83,7 @@
   h1 {
     font-family: 'Zilla Slab', serif;
     font-weight: 700;
-    font-size: clamp(2.6rem, 7vw, 4.4rem);
+    font-size: clamp(2.2rem, 5.5vw, 3.6rem);
     line-height: 1.05;
     letter-spacing: -0.01em;
     margin: 8px 0 20px;
@@ -119,19 +119,9 @@
   /* ---------- Proof strip ---------- */
   .proof {
     border-top: 1.5px solid var(--line);
-    border-bottom: 1.5px solid var(--line);
-    padding: 22px 0;
     margin-bottom: 88px;
   }
-  .proof-items {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 14px 40px;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 0.8rem;
-    color: var(--ink-soft);
-  }
-  .proof-items strong { color: var(--ink); font-weight: 500; }
+  .proof-items { display: none; }
 
   /* ---------- Sections ---------- */
   section { margin-bottom: 96px; }
@@ -256,9 +246,9 @@
 <body>
 
 <header class="wrap">
-  <span class="mono eyebrow fade-in">Bethlehem, PA</span>
-  <h1 class="fade-in d1">Marena Abboud</h1>
-  <p class="thesis fade-in d2">I build software <mark>people actually use</mark> — from VR apps piloting in hospitals to platforms teaching real students. B.S. Computer Science, minor in Art.</p>
+  <span class="mono eyebrow fade-in">Marena Abboud · Computer Science + Art · Bethlehem, PA</span>
+  <h1 class="fade-in d1">Hi, I'm Marena :)</h1>
+  <p class="thesis fade-in d2">I love to build things that help other people. So far, I've built a VR app piloting at a rehabilitation hospital, a learning platform ~30 intro CS students use every week, and search tools for policy researchers.</p>
   <div class="header-links fade-in d3">
     <a class="btn primary" href="mailto:abboudmarina9@gmail.com">Email me</a>
     <a class="btn" href="https://github.com/Marena-AB">GitHub</a>
@@ -267,14 +257,7 @@
   </div>
 </header>
 
-<div class="proof wrap">
-  <div class="proof-items">
-    <span><strong>2 apps</strong> live on the App Store &amp; Google Play</span>
-    <span><strong>~30 students</strong> learning on a platform I helped build</span>
-    <span><strong>1 hospital</strong> piloting my VR app</span>
-    <span><strong>3.88 GPA</strong> · Summa Cum Laude</span>
-  </div>
-</div>
+<div class="proof wrap" aria-hidden="true"></div>
 
 <main class="wrap">
 
@@ -304,7 +287,7 @@
         <span class="status">In production</span>
       </div>
       <p class="role">Full-stack learning platform (team project) · Adopted by Moravian's intro CS courses</p>
-      <p class="desc">A team-built learning platform now used by ~30 students across two intro CS courses: leveled question sets, per-student progress tracking, and instructor dashboards. I contributed across the full stack — the Flask + SQLAlchemy REST API, the React + TypeScript frontend, Google OAuth, and deployment on AWS EC2 — and kept contributing after the semester ended, adding CSV roster management with audit history, per-question analytics, and seeded datasets for instructor testing.</p>
+      <p class="desc">A team-built learning platform now used by ~30 students across two intro CS courses: leveled question sets, per-student progress tracking, and instructor dashboards. I contributed across the full stack, including the Flask + SQLAlchemy REST API, the React + TypeScript frontend, Google OAuth, and deployment on AWS EC2. After the semester ended I kept contributing, adding CSV roster management with audit history, per-question analytics, and seeded datasets for instructor testing.</p>
       <div class="tags">
         <span class="tag">Flask</span><span class="tag">React</span><span class="tag">TypeScript</span><span class="tag">SQLAlchemy</span><span class="tag">Google OAuth</span><span class="tag">AWS EC2</span>
       </div>
@@ -354,7 +337,7 @@
       </div>
       <div class="mini">
         <h4>Companion KMP Apps</h4>
-        <p>Tic-Tac-Toe, a misophonia survey tracker, and a cross-platform Sketchpad app — all built in Kotlin Multiplatform for Android and iOS.</p>
+        <p>Tic-Tac-Toe, a misophonia survey tracker, and a cross-platform Sketchpad app, all built in Kotlin Multiplatform for Android and iOS.</p>
       </div>
     </div>
   </section>
@@ -364,11 +347,11 @@
     <div class="about-inner">
       <div>
         <p>I'm a Computer Science graduate from Moravian University with a minor in Art, which is why the things I build tend to <mark>work well and look right</mark>. My favorite projects live where engineering meets people: a VR app that had to be usable by patients in pain, a learning platform that had to make sense to first-semester students.</p>
-        <p>I've spent two years as a Teaching Assistant and PASS Leader for intro Python, which taught me how to explain hard things simply — a skill that shows up in my documentation, my UIs, and my code reviews.</p>
+        <p>I've spent two years as a Teaching Assistant and PASS Leader for intro Python, which taught me how to explain hard things simply, a skill that shows up in my documentation, my UIs, and my code reviews.</p>
       </div>
       <dl class="about-facts">
         <dt>Education</dt>
-        <dd>B.S. Computer Science, Minor in Art — Moravian University, May 2026. Summa Cum Laude.</dd>
+        <dd>B.S. Computer Science, Minor in Art, Moravian University, May 2026. 3.88 GPA, Summa Cum Laude.</dd>
         <dt>Languages</dt>
         <dd>Python, Java, Kotlin, JavaScript/TypeScript, SQL</dd>
         <dt>Tools</dt>
@@ -383,8 +366,8 @@
 
 <footer>
   <div class="wrap">
-    <h2>Let's build something</h2>
-    <p>I'm looking for full-stack and software development roles. If you want someone who ships, let's talk.</p>
+    <h2>Get in touch</h2>
+    <p>I'm looking for full-stack and software development roles. If you think I'd be a good fit for your team, I'd love to hear from you.</p>
     <div class="header-links">
       <a class="btn primary" href="mailto:abboudmarina9@gmail.com">abboudmarina9@gmail.com</a>
       <a class="btn" href="https://linkedin.com/in/marena-abboud232aa7387">LinkedIn</a>
